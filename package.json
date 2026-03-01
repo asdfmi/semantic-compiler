@@ -1,0 +1,21 @@
+{
+  "name": "semantic-compiler",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build:cli": "tsc -p packages/cli/tsconfig.json",
+    "check": "npm run build:cli && node dist/cli/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "typescript": "^5.9.3"
+  }
+}
